@@ -16,10 +16,10 @@ package chapter1;
  * 输出: -1
  * 解释: 2 不存在 nums 中因此返回 -1
  */
-public class First {
+public class Solution {
 
     public static void main(String[] args) {
-        First test = new First();
+        Solution test = new Solution();
         int[] nums = {-1, 0, 3, 5, 9, 12};
         System.out.println(test.search(nums, 9));
     }
