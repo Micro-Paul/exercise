@@ -52,4 +52,9 @@ public class Solution extends VersionControl {
         }
         return left;
     }
+
+    public int searchInsert(int[] nums, int target) {
+
+        return -1;
+    }
 }
