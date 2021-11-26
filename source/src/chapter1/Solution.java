@@ -21,7 +21,10 @@ public class Solution extends VersionControl {
     public static void main(String[] args) {
         Solution test = new Solution();
         int[] nums = {-1, 0, 3, 5, 9, 12};
-        System.out.println(test.search(nums, 9));
+//        System.out.println(test.search(nums, 9));
+
+        int[] numss = {1,3,5,6};
+        System.out.println(test.searchInsert(numss, 5));
     }
 
     public int search(int[] nums, int target) {
@@ -54,7 +57,17 @@ public class Solution extends VersionControl {
     }
 
     public int searchInsert(int[] nums, int target) {
-
-        return -1;
+        int left = 0, right = nums.length -1;
+        while (left <= right) {
+            int mid = left + (right -left) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] < target){
+                left = mid + 1;
+            } else {
+                right = right -1;
+            }
+        }
+        return left;
     }
 }
