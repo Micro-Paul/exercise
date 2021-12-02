@@ -1,6 +1,9 @@
 package chapter1;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -135,4 +138,18 @@ public class Solution extends VersionControl {
         }
         return result;
     }
+
+    /**
+     * 给定一个整数数组，判断是否存在重复元素。
+     * 如果存在一值在数组中出现至少两次，函数返回 true 。如果数组中每个元素都不相同，则返回 false 。
+     *
+     * @param nums
+     * @return
+     */
+    public boolean containsDuplicate(int[] nums) {
+        int i = nums.length;
+        return false;
+
+    }
+
 }
